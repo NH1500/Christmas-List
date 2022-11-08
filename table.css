@@ -1,0 +1,51 @@
+* {
+  /* Change your font family */
+  font-family: "Trebuchet MS", Arial;
+}
+
+.table-sortable th {
+  cursor: pointer;
+  background-color: #00715ba2;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+.table-sortable tbody tr {
+  border-bottom: 2px solid #dddddd;
+  background-color: rgba(255, 255, 255, 0.498);
+  text-align: center;
+}
+
+.table-sortable {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 960px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: #00765f;
+}
+
+.table-sortable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
