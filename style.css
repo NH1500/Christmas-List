@@ -5,3 +5,12 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+h1 {
+  color: #fff;
+  margin-left: 300px;
+}
+.notes {
+  color: rgb(189, 197, 198);
+  margin-left: 3px;
+}
