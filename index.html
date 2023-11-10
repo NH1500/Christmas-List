@@ -10,396 +10,233 @@
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAGZbIx5zQzDdFijZ6SPWuoUIGyl8HRefg",
+      authDomain: "nathanschristmaslist.firebaseapp.com",
+      projectId: "nathanschristmaslist",
+      storageBucket: "nathanschristmaslist.appspot.com",
+      messagingSenderId: "734913863346",
+      appId: "1:734913863346:web:1ce6583c5d0aaa9baf33ab",
+      measurementId: "G-944XZ5ZYM5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
   <body>
     <h1>Nathan's Christmas List</h1>
     <div class="notes">
       <h3>Notes:</h3>
-      <l>
-        <p>
+      <ul>
+        <li>
           I know this is a big list and I am in no way asking for all of these
           things, I only tried to add a lot of items to give you all lots of
           options.
-        </p>
-        <p>
+        </li>
+        <li>
           To sort this list you can just click on the price or priority headers
           to sort by that value ascending or descending.
-        </p>
-        <p>
-          What is StockX? - StockX is a reselling website. Some items on this
-          list are only availible from aftermarket sites like StockX, some items
-          are just cheaper on there. For the latter I will add other links for
-          other stores where you can find it. Another thing is the shipping
-          generally takes more than a week so keep that in mind. I can also
-          assure you that StockX is completely safe and will not steal your
-          information.
-        </p>
-        <p>
-          For clothes my sizes are Mens Small for pants and shirts, for sweatshirts, hoodies and jerseys I prefer Mens Medium. My Shoe size is Mens 13.
-        </p>
-      </l>
+        </li>
+        <li>
+          For clothes my size is Mens Large for everything.
+        </li>
+        <li>
+          all prices include shipping
+        </li>
+      </ul>
     </div>
     <table class="table table-sortable">
       <thead>
         <tr>
           <th>Name</th>
           <th>Price</th>
-          <th>Priority (1-10)</th>
           <th>Picture</th>
           <th>Link</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Madden 23</td>
-          <td>$59.95</td>
-          <td>8</td>
+          <td>1974 Porsche 911 Turbo Lego Set</td>
+          <td>$34.48</td>
           <td>
             <img
-              src="https://m.media-amazon.com/images/I/41GwsWLSSzL._SY430_SX215_QL70_FMwebp_.jpg"
-              alt="Madden"
-              height="128"
-              width="100"
+              src="https://i.ebayimg.com/images/g/4NkAAOSwdmtlHyPh/s-l1600.jpg"
+              height="256"
             />
           </td>
           <td>
             <a
-              href="https://www.amazon.com/dp/B0B6CR6BFD/?coliid=ITLV3BYEMIZK&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
+              href="https://store.bricklink.com/Legos_IL?p=Legos_IL&itemID=371274338#/shop"
+              >Bricklink</a
             >
           </td>
         </tr>
         <tr>
-          <td>Meta Quest 2 VR</td>
-          <td>$399.99</td>
-          <td>9.9</td>
+          <td>ThermoPro TempSpike Wireless Meat Thermometer</td>
+          <td>$51.00</td>
           <td>
             <img
-              src="https://m.media-amazon.com/images/I/618PlE1DM8L._SX385_.jpg"
-              alt="Quest 2"
-              height="128"
-              width="120"
-            />
+              src="https://m.media-amazon.com/images/I/71LiiGG9gjL._AC_SL1500_.jpg"
+              height="256"
+              />
           </td>
           <td>
-            <a
-              href="https://www.amazon.com/dp/B099VMT8VZ/ref=twister_B09XM8MMYD?_encoding=UTF8&th=1"
-              >Amazon</a
-            >
+            <a href="https://www.amazon.com/dp/B0BHQKC44T/?coliid=I10Y7MF12FVXNA&colid=2EV2KG5JA1SXR&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it">Amazon</a>
           </td>
         </tr>
         <tr>
-          <td>"What if? 2" Book</td>
-          <td>$18.57</td>
-          <td>7</td>
+          <td>BlenderBottle Classic Shaker Bottle</td>
+          <td>$10.99</td>
           <td>
             <img
-              src="https://m.media-amazon.com/images/I/41NUuz55BqL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
-              alt="Book"
-              height="128"
-              width="100"
-            />
+              src="https://m.media-amazon.com/images/I/71vZmUduLlL._AC_SL1500_.jpg"
+              height="256"
+              />
           </td>
           <td>
-            <a
-              href="https://www.amazon.com/dp/0525537112/?coliid=I3ILWLRSTBX0P3&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
+            <a href="https://www.amazon.com/dp/B01LZQ8OYE/?coliid=I1XT7IPUF2FT3H&colid=2EV2KG5JA1SXR&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">Amazon</a>
           </td>
         </tr>
-        <tr>
-          <td>Brian Dawkins Jersey</td>
-          <td>$129.99</td>
-          <td>9</td>
+          <td>Dartboard</td>
+          <td>$34.66</td>
           <td>
             <img
-              src="https://fanatics.frgimages.com/philadelphia-eagles/mens-nike-brian-dawkins-black-philadelphia-eagles-retired-player-jersey_pi4268000_altimages_ff_4268273-a34b2991f642430b1b34alt1_full.jpg?_hv=2&w=900"
-              alt="Jersey"
-              height="128"
-              width="128"
-            />
+              src="https://m.media-amazon.com/images/I/81zNPCw1t3L._AC_SL1500_.jpg"
+              height="256"
+              />
           </td>
           <td>
-            <a
-              href="https://store.philadelphiaeagles.com/mens-nike-brian-dawkins-midnight-green-philadelphia-eagles-game-retired-player-jersey/p-36983060131317+z-9724-1134625005?_ref=p-SRP:m-GRID:i-r0c2:po-2&sku=14198372"
-              >Philadelphia Eagles Pro Shop</a
-            >
+            <a href="https://www.amazon.com/Viper-Regulation-Staple-Free-Galvanized-High-Grade/dp/B00EX7EAZW?dchild=1&keywords=viper%2Bleague%2Bpro&qid=1612914024&sr=8-2&linkCode=sl1&tag=recommended050-20&linkId=e9b696a40ff1a3cfa3407eeed5c29d40&language=en_US&ref_=as_li_ss_tl&th=1">Amazon</a>
           </td>
-        </tr>
-        <tr>
-          <td>MTB Grips</td>
-          <td>$22.90</td>
-          <td>6</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/71abbRSeIGL._AC_SX522_.jpg"
-              alt="Grips"
-              height="128"
-              width="150"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/B000VSWJ64/?coliid=I2ZIG3B3SMPIS7&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Xbox Controller</td>
-          <td>$49</td>
-          <td>7</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/41wDPV8sIdL._SX300_SY300_QL70_FMwebp_.jpg"
-              alt="Controller"
-              height="128"
-              width="128"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/B08DF248LD/?coliid=I1LN1XMON6HS6B&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Xbox Gift card</td>
-          <td>$25</td>
-          <td>6</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/61bgm0-dJoS._SX425_.jpg"
-              alt="xbox card"
-              height="128"
-              width="128"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/B00F4CF39C/?coliid=I1CCTR1NJFRQWN&colid=21ZZSG65B8ZHZ&ref_=lv_ov_lig_dp_it&th=1"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Apple Gift Card</td>
-          <td>$50</td>
-          <td>7</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/71CSEbKaLkL._SX425_.jpg"
-              alt="apple card"
-              height="128"
-              width="128"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/B08B3PL6B1/?coliid=IQKVPOTOGJKAT&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>UNC Hoodie</td>
-          <td>$54.99</td>
-          <td>8</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/717nptEUm9L._AC_UX679_.jpg"
-              alt="UNC hoodie"
-              height="128"
-              width="96"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/B083WPLCVS/?coliid=I378I1K4CI2TRF&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>UNC Crewneck</td>
-          <td>$64.99</td>
-          <td>8</td>
-          <td>
-            <img
-              src="https://images.footballfanatics.com/north-carolina-tar-heels/mens-champion-gray-north-carolina-tar-heels-arch-over-logo-reverse-weave-pullover-sweatshirt_pi3205000_altimages_ff_3205793alt2_full.jpg?_hv=2&w=900"
-              alt="UNC crewneck"
-              height="128"
-              width="128"
-            />
-          </td>
-          <td>
-            <a
-              href="https://shop.goheels.com/mens-champion-gray-north-carolina-tar-heels-arch-over-logo-reverse-weave-pullover-sweatshirt/p-25133305746569+z-9884-4038583722?_ref=p-SRP:m-GRID:i-r5c0:po-15"
-              >GoHeels.com</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Nike Sweatpants</td>
-          <td>$42</td>
-          <td>7.5</td>
-          <td>
-            <img
-              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/i1-a36b5f92-1cf8-41d8-b144-f4d07bd1d7c3/sportswear-club-fleece-mens-jersey-pants-8K8kSZ.png"
-              alt="sweatpants"
-              height="128"
-              width="96"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.nike.com/t/sportswear-club-fleece-mens-jersey-pants-8K8kSZ/BV2766-063"
-              >Nike</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>"How the World Really Works" Book</td>
-          <td>$22.99</td>
-          <td>6.5</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/41+MkmjAu0L._SX329_BO1,204,203,200_.jpg"
-              alt="book"
-              height="128"
-              width="96"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/dp/0593297067/?coliid=I1TPWFD8L304F9&colid=21ZZSG65B8ZHZ&psc=1&ref_=lv_ov_lig_dp_it"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Auburn Crewneck</td>
-          <td>$44.99</td>
-          <td>7</td>
-          <td>
-            <img
-              src="https://fanatics.frgimages.com/auburn-tigers/mens-colosseum-orange-auburn-tigers-arch-and-logo-crew-neck-sweatshirt_pi3129000_altimages_ff_3129338alt2_full.jpg?_hv=2&w=900"
-              alt="Auburn crewneck"
-              height="128"
-              width="128"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.fanatics.com/mens_colosseum_white_auburn_tigers_arch_and_logo_crew_neck_sweatshirt/t-56021666+o-38+d-89848895+f-4757114+z-7-2781199347?utm_medium=cse&_s=GPA_CA&sku=10860873&targetid=targetid&targetid=pla-349206747025&gclid=Cj0KCQiAmaibBhCAARIsAKUlaKSPiT6xN4u_c3SvHvmkKUtUuFCuSn_HcaWviiVwkixdV80bWfVrxwcaAlo3EALw_wcB"
-              >Fanatics</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Nike Socks</td>
-          <td>$26.88</td>
-          <td>6</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/81TXEbtmYRL._AC_UX569_.jpg"
-              alt="Nike socks"
-              height="128"
-              width="100"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/NIKE-Unisex-Performance-Cushion-Medium/dp/B010TR602K/ref=sr_1_5?keywords=6%2Bpack%2Bnike%2Bsocks&qid=1668459799&sr=8-5&th=1&psc=1"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Nike Air Force 1 Low</td>
-          <td>$109</td>
-          <td>8</td>
-          <td>
-            <img
-              src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cff2bcb8-e664-4f0f-a6bd-19941db446f5/air-force-1-07-lv8-mens-shoes-W1vVxF.png"
-              alt="Nike Air Force 1 Low"
-              height="128"
-              width="110"
-            />
-          </td>
-          <td>
-            <a
-              href="https://stockx.com/nike-air-force-1-low-82-double-swoosh-medium-blue"
-              >StockX</a
-            >
-          </br>
-            <a
-              href="https://www.dickssportinggoods.com/p/nike-mens-air-force-1-07-lv8-shoes-22nikmrfrc107lv8fmns/22nikmrfrc107lv8fmns?sku=23009762&camp=CSE:DSG_92700072992198885_pla_pla-1746818479420_58700008024023777_71700000100252985&segment=&gclid=CjwKCAiA7IGcBhA8EiwAFfUDsX_nyJUVWQ58MOgxuLznpxH6dExvn8rSf2NaH9Hcs_kuEvABCLT6gBoCo5gQAvD_BwE&gclsrc=aw.ds"
-              >Dicks</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Porsche 911 LEGO set</td>
-          <td>$34</td>
-          <td>7.5</td>
-          <td>
-            <img
-              src="https://images.stockx.com/images/LEGO-Speed-Champions-1974-Porsche-911-Turbo-3-Set-75895.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1634676773&q=60"
-              alt="LEGO Porsche"
-              height="128"
-              width="178"
-            />
-          </td>
-          <td>
-            <a
-              href="https://stockx.com/lego-speed-champions-1974-porsche-911-turbo-3-set-75895"
-              >StockX</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Ghiradelli Peppermint Bark Chocolate Squares</td>
-          <td>$13.42</td>
-          <td>7</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/813YTRgufjL._SX385_.jpg"
-              alt="Peppermint bark"
-              height="128"
-              width="120"
-            />
-          </td>
-          <td>
-            <a
-              href="https://www.amazon.com/GHIRARDELLI-Chocolate-Peppermint-Assorted-Chocolates/dp/B00CPZW2BI/ref=pd_lpo_1?pd_rd_w=2ue56&content-id=amzn1.sym.116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_p=116f529c-aa4d-4763-b2b6-4d614ec7dc00&pf_rd_r=3ADE461G8M3QN0YJG8Z6&pd_rd_wg=RUO9V&pd_rd_r=36773904-d3d5-4a28-b039-3097c5669340&pd_rd_i=B00CPZW2BI&psc=1"
-              >Amazon</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Airpods</td>
-          <td>$139</td>
-          <td>8.5</td>
-          <td>
-            <img
-              src="https://m.media-amazon.com/images/I/61CVih3UpdL.__AC_SY445_SX342_QL70_FMwebp_.jpg"
-              alt="Airpods"
-              height="128"
-              width="96"
-            />
-          </td>
-          <td>
-            <a href="https://stockx.com/apple-airpods-3rd-gen-mme73am-a-white"
-              >StockX</a
-            >
-            <br />
-            <a
-              href="https://www.amazon.com/Apple-Generation-Lightning-Resistant-Headphones/dp/B0BDHB9Y8H/ref=sr_1_14?keywords=airpods&qid=1668481519&sr=8-14"
-              >Amazon</a
-            >
-          </td>
-        </tr>
+          <tr>
+            <td>Pentel Graph Gear 1000 Pencil</td>
+            <td>$8.00</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/61FS57oF8GL._AC_SL1000_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/dp/B0013NHU7O/?coliid=I45P0ZR4QO851&colid=2EV2KG5JA1SXR&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Desk/Mouse pad</td>
+            <td>$13.76</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/51xiJUpyKcL._AC_SL1500_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/dp/B0788LMLZL/?coliid=IQ7HTFBY58BN6&colid=2EV2KG5JA1SXR&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Gripmunk Smartish iPhone 12 Slim Case</td>
+            <td>$14.99</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/61Pi9T1lj8L._AC_SL1500_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/dp/B08LZVTJ28/?coliid=I2JSAZOHP2KN1S&colid=2EV2KG5JA1SXR&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Edifier WH700NB Active Noise Cancelling Headphones</td>
+            <td>$49.99</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/61sc8UFHw6L._AC_SL1500_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/dp/B0CFVLVD46/?coliid=I2G4E4EHR65BS9&colid=2EV2KG5JA1SXR&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>RTIC 32oz insulated water bottle</td>
+            <td>$29.49</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/31leyz8z0jL._AC_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/RTIC-Insulated-Stainless-Insulation-Leak-Proof/dp/B0BS73SH9P/ref=sr_1_1?crid=2ZCA596RXSX7S&keywords=rtic%2Bwater%2Bbottle&qid=1699477922&refinements=p_89%3ARTIC&rnid=2528832011&s=sporting-goods&sprefix=rtic%2B%2Csporting%2C501&sr=1-1&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Bikehand Bike Repair Stand</td>
+            <td>$99.99</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/511LkizHEtS._AC_SL1500_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/dp/B00D9B7OKQ/?coliid=I3UDEGXFKXJMML&colid=2EV2KG5JA1SXR&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>LED light strip 100ft</td>
+            <td>$19.86</td>
+            <td>
+              <img
+                src="https://m.media-amazon.com/images/I/81EsFKbr-bL._AC_SL1500_.jpg"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.amazon.com/TJOY-Bedroom-Changing-Multi-Color-Wireless/dp/B09W2F14FM/ref=sr_1_3?crid=AD2AA5F4K9OH&keywords=led%2Blight%2Bstrip%2B75ft&qid=1699478576&s=hi&sprefix=led%2Blight%2Bstrip%2B75ft%2Ctools%2C68&sr=1-3&th=1">Amazon</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Gymshark Sleek backpack</td>
+            <td>$62.00</td>
+            <td>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0156/6146/products/SleekBackpackBlackI1A8A-BBBB14_ZH_ZH_7e66c558-90e3-4d28-bf11-971d81306541_1920x.jpg?v=1678718933"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.gymshark.com/products/gymshark-sleek-backpack-black-aw21?gad_source=1">Gymshark</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Carolina Lacrosse Crewneck</td>
+            <td>$59.99</td>
+            <td>
+              <img
+                src="https://www.lacrosseunlimited.com/media/catalog/product/2/0/2012737_3.jpg?optimize=high&fit=bounds&height=1120&width=1120"
+                height="256"
+                />
+            </td>
+            <td>
+              <a href="https://www.lacrosseunlimited.com/unc-lacrosse-adult-crew-neck.html">Lacrosse Unlimited</a>
+            </td>
+          </tr>
       </tbody>
     </table>
 
